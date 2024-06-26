@@ -1,0 +1,352 @@
+{% extends "base.html" %}
+{% block content %}
+        <!-- start slideshow-->
+        <div class="container-fluid full-screen">
+            <div class="row slider-fade">
+                <div class="owl-carousel owl-theme">
+                    <div class="text-center item bg-img" data-overlay-dark="4" data-background="{{ url_for('static', filename='img/bg/EntrePage.svg') }}">
+                        <div class="display-table height-100 position-relative caption">
+                            <div class="display-table-cell vertical-align-middle">
+                                <h1 class="text-white">Learn STEM Subjects with Ease</h1>
+                                <p class="text-white margin-40px-bottom md-margin-30px-bottom xs-margin-25px-bottom center-col">In an ever-changing, increasingly complex world, it's more important than ever for youth to demonstrate problem solving skills and develop knowledge in science, technology, engineering and math.</p>
+                                <a href="{{ url_for('courses') }}" class="butn theme">
+                                    <span class="alt-font">Learn More</span><i class="fas fa-long-arrow-alt-right font-size16 sm-font-size14 margin-10px-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end slideshow-->
+
+        <!-- start facility section -->
+        <section class="no-padding-top facility-box facility-wrapper ">
+            <div class="container">
+                <div class="row facility-block">
+                    <div class="col-12">
+                        <div class="owl-carousel owl-theme">
+
+                            <div class="step bg-blue">
+                                <a href="#" class="text-center">
+                                    <i class="ti-thought"></i>
+                                    <h4 class="step-title">Science</h4>
+                                </a>
+                            </div>
+                            <div class="step bg-sky">
+                                <a href="#" class="text-center">
+                                    <i class="ti-server"></i>
+                                    <h4 class="step-title">Technology</h4>
+                                </a>
+                            </div>
+                            <div class="step bg-green">
+                                <a href="#" class="text-center">
+                                    <i class="ti-layers"></i>
+                                    <h4 class="step-title">Engineering</h4>
+                                </a>
+                            </div>
+                            <div class="step bg-pink">
+                                <a href="#" class="text-center">
+                                    <i class="ti-blackboard"></i>
+                                    <h4 class="step-title">Mathematics</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end facility section -->
+
+        <!-- start categories section -->
+        <section class="no-padding-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 center-col margin-50px-bottom md-margin-40px-bottom xs-margin-30px-bottom text-center">
+                        <h3 class="font-weight-500 font-size32 md-font-size28 sm-font-size26 xs-font-size24 section-title">Course Categories</h3>
+                        <div class="title-border"><span class="lg"></span><span class="sm"></span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="course-categories margin-25px-bottom">
+                            <div>
+                                <img src="https://www.chitrakootweb.com/template/campus/img/courses/c1.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <h5 class="margin-5px-bottom font-weight-500 text-white font-size24 md-font-size22 sm-font-size20 xs-font-size18">Grade 6 Maths</h5>
+                                <p class="no-margin-bottom text-white font-size16 xs-font-size14">8 hours for 4 weeks</p>
+                            </div>
+                        </div>
+
+                        <div class="course-categories sm-margin-25px-bottom">
+                            <div>
+                                <img src="https://www.chitrakootweb.com/template/campus/img/courses/c1.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <h5 class="margin-5px-bottom font-weight-500 text-white font-size24 md-font-size22 sm-font-size20 xs-font-size18">Gradle 7 Maths</h5>
+                                <p class="no-margin-bottom text-white font-size16 xs-font-size14">8 hours for 4 weeks</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="course-categories margin-25px-bottom">
+                            <div>
+                                <img src="https://www.chitrakootweb.com/template/campus/img/courses/c1.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <h5 class="margin-5px-bottom font-weight-500 text-white font-size24 md-font-size22 sm-font-size20 xs-font-size18">Grade 8</h5>
+                                <p class="no-margin-bottom text-white font-size16 xs-font-size14">8 hours for 5 weeks</p>
+                            </div>
+                        </div>
+
+                        <div class="course-categories sm-margin-25px-bottom">
+                            <div>
+                                <img src="https://www.chitrakootweb.com/template/campus/img/courses/c1.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <h5 class="margin-5px-bottom font-weight-500 text-white font-size24 md-font-size22 sm-font-size20 xs-font-size18">Algebra I</h5>
+                                <p class="no-margin-bottom text-white font-size16 xs-font-size14">8 hours for 5 weeks</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="course-categories margin-25px-bottom">
+                            <div>
+                                <img src="https://www.chitrakootweb.com/template/campus/img/courses/c1.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <h5 class="margin-5px-bottom font-weight-500 text-white font-size24 md-font-size22 sm-font-size20 xs-font-size18">Algebra II</h5>
+                                <p class="no-margin-bottom text-white font-size16 xs-font-size14">8 hours for 5 weeks</p>
+                            </div>
+                        </div>
+
+                        <div class="course-categories">
+                            <div>
+                                <img src="https://www.chitrakootweb.com/template/campus/img/courses/c1.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <h5 class="margin-5px-bottom font-weight-500 text-white font-size24 md-font-size22 sm-font-size20 xs-font-size18">Geometry</h5>
+                                <p class="no-margin-bottom text-white font-size16 xs-font-size14">8 hours for 4 weeks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end categories section -->
+
+        <!-- section tutoring program-->
+        <section>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 sm-margin-30px-bottom">
+                        <div class="text-center padding-60px-right sm-no-padding-right">
+                            <img src="https://www.chitrakootweb.com/template/campus/img/content/image.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="skills-block padding-20px-left md-padding-40px-left sm-no-padding-left">
+                            <h3 class="font-weight-500 font-size32 md-font-size28 sm-font-size26 xs-font-size24 section-title xs-text-center">Our Tutoring Program</h3>
+                            <div class="title-border text-left xs-text-center"><span class="sm"></span><span class="lg"></span><span class="sm"></span></div>
+                            <p class="xs-text-center xs-margin-10px-top xs-margin-30px-bottom">We offer flexible tutoring programs from grade 6 to college algebra to help students boost grades and improve overall mathematics skills.</p>
+                            <div class="row margin-30px-bottom md-margin-25px-botttom xs-margin-25px-bottom">
+                                <div class="col-lg-2 col-md-2 col-sm-12 xs-text-center sm-no-padding-right xs-margin-15px-bottom">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="col-lg-10 col-md-9 col-sm-10 col-sm-12 xs-text-center sm-no-padding-left xs-padding-15px-left">
+                                    <h5 class="font-size22 md-font-size18 sm-font-size16 margin-10px-bottom md-margin-5px-bottom xs-margin-10px-bottom font-weight-600">Flexible Schedule</h5>
+                                    <p class="width-95 xs-width-85 xs-center-col no-margin-bottom">We make our schedule work for our students and one of our goal is to make learning hassle free.</p>
+                                </div>
+                            </div>
+                            <div class="row margin-30px-bottom md-margin-25px-botttom xs-margin-25px-bottom">
+                                <div class="col-lg-2 col-md-2 col-sm-12 xs-text-center sm-no-padding-right xs-margin-15px-bottom">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <div class="col-lg-10 col-md-9 col-sm-10 col-sm-12 xs-text-center sm-no-padding-left xs-padding-15px-left">
+                                    <h5 class="font-size22 md-font-size18 sm-font-size16 margin-10px-bottom md-margin-5px-bottom xs-margin-10px-bottom font-weight-600">Custom Environment</h5>
+                                    <p class="width-95 xs-width-85 xs-center-col no-margin-bottom">Learn from the comfort of your place or join us on our online tutoring portal.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-12 xs-text-center sm-no-padding-right xs-margin-15px-bottom">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="col-lg-10 col-md-9 col-sm-10 col-sm-12 xs-text-center sm-no-padding-left xs-padding-15px-left">
+                                    <h5 class="font-size22 md-font-size18 sm-font-size16 margin-10px-bottom md-margin-5px-bottom xs-margin-10px-bottom font-weight-600">Experienced Tutors</h5>
+                                    <p class="width-95 xs-width-85 xs-center-col no-margin-bottom">We have the best tutors who can easily break down the complex mathematics concepts to digestible bits for the brain.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end totoring program -->
+
+        <!-- start course area section -->
+        <section class="courses-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 center-col margin-50px-bottom md-margin-40px-bottom text-center">
+                        <h3 class="font-weight-500 font-size32 md-font-size28 sm-font-size26 xs-font-size24 section-title">Our Online Courses</h3>
+                        <div class="title-border"><span class="lg"></span><span class="md"></span><span class="sm"></span></div>
+                    </div>
+                </div>
+                <div class="courses-list">
+                    <div class="owl-carousel owl-theme">
+                        <div class="courses-box">
+                            <div class="courses-pic position-relative">
+                                <a href="course-details.html"><img src="img/courses/courses_thumb_01.jpg" alt="" /></a>
+                            </div>
+                            <div class="course-main-content">
+                                <div class="courses-desc last-paragraph-no-margin">
+                                    <div class="courses-title">
+                                        <h4 class="font-size22 md-font-size20 sm-font-size18 margin-5px-bottom font-weight-500"><a href="#" class="text-theme-color">ACT Prep</a></h4>
+                                    </div>
+                                    <div class="course-review margin-15px-bottom">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="padding-10px-left">20 Reviews</span>
+                                    </div>
+                                    <p class="font-size15 xs-font-size14 line-height-28">Prepare for ACT tests with official practice questions and one on one tutoring to give you the best odds of succeeding. </p>
+                                </div>
+                            </div>
+                            <div class="card-footer media bg-white align-items-center justify-content-between">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-1">
+                                        <i class="ti-book mr-2"></i>5 weeks
+                                    </li>
+                                    <li class="">
+                                        <i class="ti-time mr-2"></i>8 hours
+                                    </li>
+                                </ul>
+                                <h4 class="text-right no-margin-bottom">
+                                  <span>$2000</span>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="courses-box">
+                            <div class="courses-pic position-relative">
+                                <a href="course-details.html"><img src="img/courses/courses_thumb_02.jpg" alt="" /></a>
+                            </div>
+                            <div class="course-main-content">
+                                <div class="courses-desc last-paragraph-no-margin">
+                                    <div class="courses-title">
+                                        <h4 class="font-size22 md-font-size20 sm-font-size18 margin-5px-bottom font-weight-500"><a href="#" class="text-theme-color">College ACCUPLACER</a></h4>
+                                    </div>
+                                    <div class="course-review margin-15px-bottom">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="padding-10px-left">26 Reviews</span>
+                                    </div>
+                                    <p class="font-size15 xs-font-size14 line-height-28">Prepare for College ACCUPLACER exams with guided help from our tutors to increase your chances of succeeding.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer media bg-white align-items-center justify-content-between">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-1">
+                                        <i class="ti-book mr-2"></i>5weeks
+                                    </li>
+                                    <li class="">
+                                        <i class="ti-time mr-2"></i>8 hours
+                                    </li>
+                                </ul>
+                                <h4 class="text-right no-margin-bottom">
+                                  <span>$1600</span>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="courses-box">
+                            <div class="courses-pic position-relative">
+                                <a href="course-details.html"><img src="img/courses/courses_thumb_03.jpg" alt="" /></a>
+                            </div>
+                            <div class="course-main-content">
+                                <div class="courses-desc last-paragraph-no-margin">
+                                    <div class="courses-title">
+                                        <h4 class="font-size22 md-font-size20 sm-font-size18 margin-5px-bottom font-weight-500"><a href="#" class="text-theme-color">Calculus I, II, III</a></h4>
+                                    </div>
+                                    <div class="course-review margin-15px-bottom">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="padding-10px-left">18 Reviews</span>
+                                    </div>
+                                    <p class="font-size15 xs-font-size14 line-height-28">Prepare for your calculus I, II, and III exams by taking our calculus tutoring module designed for college students.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer media bg-white align-items-center justify-content-between">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-1">
+                                        <i class="ti-book mr-2"></i>5 weeks
+                                    </li>
+                                    <li class="">
+                                        <i class="ti-time mr-2"></i>8 hours
+                                    </li>
+                                </ul>
+                                <h4 class="text-right no-margin-bottom">
+                                  <span>$1600</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end course area section -->
+
+        <!-- start testimonials section -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 center-col margin-50px-bottom md-margin-40px-bottom xs-margin-30px-bottom text-center">
+                        <h3 class="font-weight-500 font-size32 md-font-size28 sm-font-size26 xs-font-size24 section-title">Students Feedback</h3>
+                        <div class="title-border"><span class="sm"></span><span class="lg"></span><span class="sm"></span></div>
+                    </div>
+                </div>
+                <div class="testimonial-style2 owl-theme owl-carousel" data-slider-id="1">
+                    <div class="text-center">
+                        <div class="testi-img">
+                            <img src="{{ url_for('static', filename='img/testmonials/Stephane.png') }}" class="border-radius-50" alt="" />
+                        </div>
+                        <div class="testmonial-text">
+                            <p class="font-size18 md-font-size16 sm-font-size15 xs-font-size14 line-height-30 xs-line-height-28 margin-25px-bottom sm-margin-20px-bottom">I like the breakdown of math problems and the way it correlate with my grade level. Explanations are given with illustrations to make the abstraction of Math less confusing.</p>
+                            <h5 class="margin-5px-bottom font-size18 xs-font-size16"><a href="#" class="text-black">Stephane Kruse</a></h5>
+                            <h6 class="font-size14 xs-font-size13 letter-spacing-1 font-weight-500 opacity6 no-margin-bottom">11th Grader</h6>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="testi-img">
+                            <img src="{{ url_for('static', filename='img/testmonials/Alivin.png') }}" class="border-radius-50" alt="" />
+                        </div>
+                        <div class="testmonial-text">
+                            <p class="font-size18 md-font-size16 sm-font-size15 xs-font-size14 line-height-30 xs-line-height-28 margin-25px-bottom sm-margin-20px-bottom">I was struggling with Calculus but after couple of tutoring sessions with Salman, I am now in the game of scoring good in Math. Calculus sometimes can be a pain to grasp.</p>
+                            <h5 class="margin-5px-bottom font-size18 xs-font-size16"><a href="#" class="text-black">Alivin Corondo</a></h5>
+                            <h6 class="font-size14 xs-font-size13 letter-spacing-1 font-weight-500 opacity6 no-margin-bottom">College Freshman</h6>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="testi-img">
+                            <img src="{{ url_for('static', filename='img/testmonials/Ronita.png') }}" class="border-radius-50" alt="" />
+                        </div>
+                        <div class="testmonial-text">
+                            <p class="font-size18 md-font-size16 sm-font-size15 xs-font-size14 line-height-30 xs-line-height-28 margin-25px-bottom sm-margin-20px-bottom">Salman's one on one tutoring sessions have helped me a lot. I was pretty sure my teacher was going to ask me to drop from my Algebra class and go to accelerated math, but I got help from EasyMath before that happened. I went from C's and D's to B's, and I'm working on getting them to A's.</p>
+                            <h5 class="margin-5px-bottom font-size18 xs-font-size16"><a href="#" class="text-black">Ronita Manilo</a></h5>
+                            <h6 class="font-size14 xs-font-size13 letter-spacing-1 font-weight-500 opacity6 no-margin-bottom">12th Grader</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end testimonials section -->
+{% endblock %}

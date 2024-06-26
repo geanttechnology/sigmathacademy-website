@@ -1,0 +1,4 @@
+# To start the Server with gunicorn:
+su - mlkroot
+cd easymath-website
+gunicorn3 -D main:app

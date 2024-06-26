@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- start main-wrapper section -->
+    <div class="main-wrapper">
+
+        <!-- start 404 page section -->
+        <section class="full-screen text-center no-padding">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class=" padding-65px-tb">
+                            <img src="{{ url_for('static', filename='img/logos/easy-math-logo.svg') }}" height="70" width="346" alt="EasyMath Logo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row page-container align-items-center">
+                    <div class="col-lg-5 no-padding sm-padding-15px-lr">
+                        <div class="sm-display-none">
+                            <img src="{{ url_for('static', filename='img/content/404.svg') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-7 no-padding sm-padding-15px-lr">
+                        <div class="text-left padding-ten-left sm-no-padding-left sm-text-center">
+                            <p class="title">404</p>
+                            <h2 class="font-size40 md-font-size-34 sm-font-size30 xs-font-size26 margin-10px-bottom">Sorry, the page you are requesting was not found</h2>
+                            <p class="font-size18 xs-font-size16 margin-50px-bottom sm-margin-40px-bottom">You may have mistyped the address or the page may have been moved.</p>
+                            <a href="{{ url_for('home') }}" class="butn theme margin-10px-right margin-10px-bottom"><i class="fas fa-long-arrow-alt-left font-size16 sm-font-size14 margin-10px-right"></i><span class="alt-font">Back to Home</span></a>
+                            <a href="{{ url_for('contact') }}" class="butn theme margin-10px-bottom"><span class="alt-font">Contact Us</span><i class="fas fa-long-arrow-alt-right font-size16 sm-font-size14 margin-10px-left"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end 404 page section -->
+
+    </div>
+    <!-- end main-wrapper section -->
+
+{% endblock %}

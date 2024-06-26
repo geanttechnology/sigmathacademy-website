@@ -1,0 +1,712 @@
+{% extends "base.html" %}
+{% block content %}
+        <!-- start page title section -->
+        <section class="page-title-section bg-img cover-background" data-overlay-dark="4" data-background="{{ url_for('static', filename='img/bg/Courses.svg') }}">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Course Details</h1>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end page title section -->
+
+        <!-- start courses top-details section -->
+        <section class="top-detail no-padding">
+            <div class="container position-relative z-index-9">
+                <div class="row no-gutters">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="course-details-single padding-25px-tb xs-padding-20px-tb padding-45px-lr md-padding-25px-lr">
+                            <div class="item author d-flex align-items-center">
+                                <div class="thumb">
+                                    <a href="#"><img src="{{ url_for('static', filename='img/team/Salman.png') }}" alt="" /></a>
+                                </div>
+                                <div class="desc">
+                                    <h4 class="font-size15 font-weight-400 text-white">Instructor</h4>
+                                    <a href="#" class="font-size17 font-weight-600 text-white">Salman, Ouedraogo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="course-details-single d-flex padding-25px-tb padding-45px-lr md-padding-25px-lr">
+                            <div class="course-details-icon">
+                                <i class="ti-time"></i>
+                            </div>
+                            <div class="course-details-content">
+                                <span class="item-top-title text-white font-size16">Module Duration</span>
+                                <h6 class="no-margin-bottom font-size22 xs-font-size16 text-white font-weight-500">4 to 5 Weeks</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="course-details-single d-flex padding-25px-tb padding-45px-lr md-padding-25px-lr">
+                            <div class="course-details-icon">
+                                <i class="ti-blackboard"></i>
+                            </div>
+                            <div class="course-details-content">
+                                <span class="item-top-title text-white font-size16">Tutoring Duration</span>
+                                <h6 class="no-margin-bottom font-size22 xs-font-size16 text-white font-weight-500"> 1 to 8 hours</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="course-details-single d-flex padding-25px-tb padding-45px-lr md-padding-25px-lr">
+                            <div class="course-details-icon">
+                                <i class="ti-book"></i>
+                            </div>
+                            <div class="course-details-content">
+                                <span class="item-top-title text-white font-size16">Subjects</span>
+                                <h6 class="no-margin-bottom font-size22 xs-font-size16 text-white font-weight-500">Mathematics</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end courses top-details section -->
+
+        <!-- start course-details section -->
+        <section>
+            <div class="container">
+
+                <div class="row">
+
+                    <!--  start course details intro -->
+                    <div class="col-lg-9 col-md-12 sm-margin-40px-bottom">
+                        <div class="padding-30px-right sm-no-padding-right">
+                            <div class="course-details">
+                                <div class="margin-50px-bottom sm-margin-30px-bottom">
+                                    <div class="course-img position-relative">
+                                        <img src="img/courses/course-detail01.jpg" alt="" />
+                                        <ul class="info-box xs-display-none">
+                                            <li><i class="far fa-folder" aria-hidden="true"></i>Mathematics</li>
+                                            <li><i class="far fa-clock" aria-hidden="true"></i>1 hour to 8 hours</li>
+                                            <li><i class="far fa-bookmark" aria-hidden="true"></i>College and High-School</li>
+                                            <li><i class="fas fa-dollar-sign" aria-hidden="true"></i>$45/hour</li>
+                                            <li><i class="fas fa-globe-asia" aria-hidden="true"></i>English</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="horizontaltab tab-style2">
+                                    <ul class="resp-tabs-list hor_1">
+                                        <li>Algebra I</li>
+                                        <li>Algebra II</li>
+                                        <li>Geometry</li>
+                                        <li>Grade 8</li>
+                                        <li>Grade 7</li>
+                                        <li>Grade 6</li>
+                                    </ul>
+                                    <div class="resp-tabs-container hor_1 no-padding">
+                                        <div>
+                                            <div role="tabpanel" class="tab-pane fade in active show" id="information">
+                                                <h3 class="font-size24 sm-font-size22 xs-font-size20 font-weight-500">Algebra I Courses</h3>
+                                                <ul class="list-style2">
+                                                    <li>Expressions, Equations and Functions.</li>
+                                                    <li>Linear Equations.</li>
+                                                    <li>Linear Functions.</li>
+                                                    <li>Equations of Linear Functions.</li>
+                                                    <li>Linear Inequalities.</li>
+                                                    <li>System of Linear Equations and Inequalities.</li>
+                                                    <li>Quadratic Expressions and Equations.</li>
+                                                    <li>Quadratic Functions and Equations.</li>
+                                                    <li>Radical Functions and Geometry.</li>
+                                                    <li>Rational Functions and Equations.</li>
+                                                    <li>Statistics and Probability.</li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="container no-padding">
+                                                <div class="row">
+                                                    <h3 class="font-size24 sm-font-size22 xs-font-size20 font-weight-500">Algebra II Courses</h3>
+                                                    <p class="margin-20px-bottom">Here is a non exhaustive list of Algebra II subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Equations and Inequalities in One Variable.</li>
+                                                        <li>Equations and Inequalities in Two Variables.</li>
+                                                        <li>Systems of Linear Equations and Inequalities.</li>
+                                                        <li>Rational Expressions and Rational Functions.</li>
+                                                        <li>Rational Exponents and Roots.</li>
+                                                        <li>Radical functions.</li>
+                                                        <li>Inverse of a function.</li>
+                                                        <li>Quadratic Functions.</li>
+                                                        <li>Exponential and Logarithmic Functions.</li>
+                                                        <li>Sequences and Series.</li>
+                                                        <li>Trigonometric functions.</li>
+                                                        <li>Trigonometric Identities and Equations.</li>
+                                                        <li>Conic Sections.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <!-- start blog comment wrappper-->
+                                            <div class="container no-padding">
+                                                <div class="row">
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Geometry - Parallel and perpendicular Lines</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Parallel Lines and Transversals.</li>
+                                                        <li>Angles and Parallel Lines.</li>
+                                                        <li>Slopes of Lines.</li>
+                                                        <li>Equations of Lines.</li>
+                                                        <li>Proving Lines Parallel.</li>
+                                                        <li>Perpendiculars and Distance.</li>
+                                                    </ul>
+
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Geometry - Congruent Triangles</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Classifying Triangles.</li>
+                                                        <li>Angles of Triangles.</li>
+                                                        <li>Congruent Triangles.</li>
+                                                        <li>Proving Triangles Congruent-SSS,SAS.</li>
+                                                        <li>Proving Triangles Congruent-ASA,AAS.</li>
+                                                        <li>Isosceles and Equilateral Triangles.</li>
+                                                        <li>Congruent Transformations.</li>
+                                                        <li>Triangles and Coordinate Proof.</li>
+                                                    </ul>
+
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Geometry - Relationships in Triangles</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Bisectors of Triangles.</li>
+                                                        <li>Medians and Altitudes of Triangles.</li>
+                                                        <li>Inequality in One Triangle.</li>
+                                                        <li>The Triangle Inequality.</li>
+                                                        <li>Inequalities in Two Triangles.</li>
+                                                    </ul>
+
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Geometry - Quadrilaterals</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Angles of Polygons.</li>
+                                                        <li>Parallelograms.</li>
+                                                        <li>Tests for Parallelograms.</li>
+                                                        <li>Rectangles.</li>
+                                                        <li>Rhombi and Squares.</li>
+                                                        <li>Trapezoids and Kites.</li>
+                                                    </ul>
+
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Geometry - Proportions and Similarity</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Ratios and Proportions.</li>
+                                                        <li>Similar Polygons.</li>
+                                                        <li>Similar Triangles.</li>
+                                                        <li>Parallel Lines and Proportional Parts.</li>
+                                                        <li>Parts of Similar Triangles.</li>
+                                                        <li>Similarity Transformations.</li>
+                                                    </ul>
+
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Geometry - Right Triangles and Trigonometry</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>The Pythagorean Theorem and Its Converse.</li>
+                                                        <li>Special Right Triangles.</li>
+                                                        <li>Trigonometry.</li>
+                                                        <li>Angles of Elevation and Depression.</li>
+                                                        <li>Law of Sines and Law of Cosines.</li>
+                                                        <li>Vectors.</li>
+                                                    </ul>
+
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Geometry - Transformations and Symmetry</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Reflections.</li>
+                                                        <li>Translations.</li>
+                                                        <li>Compositions and Transformations.</li>
+                                                        <li>Symmetry.</li>
+                                                        <li>Dilations.</li>
+                                                    </ul>
+
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Geometry - Circles</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Circles and Circumference.</li>
+                                                        <li>Measuring Angles and Arcs.</li>
+                                                        <li>Arcs and Chords.</li>
+                                                        <li>Inscribed Angles.</li>
+                                                        <li>Tangents.</li>
+                                                        <li>Secants, Tangents, and Angle Measures.</li>
+                                                        <li>Equations of Circles.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- end blog comment wrappper-->
+                                        </div>
+                                        <div>
+                                            <!-- start blog comment wrappper-->
+                                            <div class="container no-padding">
+                                                <div class="row">
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Grade 8 - Radicals and Integers</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Exponents.</li>
+                                                        <li>Equivalent expressions with exponents.</li>
+                                                        <li>Negative exponents.</li>
+                                                        <li>Scientific notation.</li>
+                                                    </ul>
+
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Grade 8 - Rational and Irrational Number Relationships</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Understanding Rational and Irrational Numbers.</li>
+                                                        <li>Square Roots.</li>
+                                                        <li>Cube Roots.</li>
+                                                        <li>Using roots to Solve Equations.</li>
+                                                        <li>Comparing Rational and Irrational Numbers.</li>
+                                                        <li>Approximating Irrational Numbers.</li>
+                                                        <li>Comparing and Ordering Irrational Numbers.</li>
+                                                    </ul>
+
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Grade 8 - Linear Equations</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Understanding Slope.</li>
+                                                        <li>Graphing Linear Equations Using Slope.</li>
+                                                        <li>Solving one variable equations.</li>
+                                                        <li>Graphing Linear Equations.</li>
+                                                        <li>Understanding Linear Equation Systems.</li>
+                                                        <li>Solving 2- Variable Linear Equation Systems.</li>
+                                                        <li>Graphing Linear Equation Systems.</li>
+                                                        <li>Problem-Solving with Linear Equation Systems.</li>
+                                                    </ul>
+
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Grade 8 - Functions</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Definition of functions.</li>
+                                                        <li>Input/ Output Tables.</li>
+                                                        <li>Functions and Linear Relationships.</li>
+                                                        <li>Calculating Rate of Change in Functions.</li>
+                                                        <li>Initial Values of Linear Functions.</li>
+                                                        <li>Constructing Function Models.</li>
+                                                        <li>Graphing Functions.</li>
+                                                    </ul>
+
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Grade 8 - Geometry</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Transformations: Translations, Reflections and Rotations.</li>
+                                                        <li>Congruence.</li>
+                                                        <li>Rotations, Reflections and Translations in the Coordinate plane.</li>
+                                                        <li>Similar Triangles.</li>
+                                                        <li>Transversals and Calculating Angles.</li>
+                                                        <li>Definition of Pythagorean Theorem.</li>
+                                                        <li>Using Pythagorean Theorem.</li>
+                                                        <li>Pythagorean Theorem in the Coordinate plane.</li>
+                                                        <li>Volume: Cylinders, Cones, Spheres.</li>
+                                                    </ul>
+
+                                                    <p class="margin-20px-bottom">Here is a list of <b>Grade 8 - Statistics and Probability</b> subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Interpreting Scatter Plots.</li>
+                                                        <li>Constructing Scatter Plots.</li>
+                                                        <li>Fitting Lines to Scatter Plots.</li>
+                                                        <li>Creating Equations to Solve Bivariate Problems.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- end blog comment wrappper-->
+                                        </div>
+                                        <div>
+                                            <!-- start blog comment wrappper-->
+                                            <div class="container no-padding">
+                                                <div class="row">
+                                                    <h3 class="font-size24 sm-font-size22 xs-font-size20 font-weight-500">Grade 7 Courses</h3>
+                                                    <p class="margin-20px-bottom">Here is a list of Grade 7 Mathematics subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Integer and Order of Operations.</li>
+                                                        <li>Rational Numbers.</li>
+                                                        <li>Operation on Rational Numbers.</li>
+                                                        <li>Percents.</li>
+                                                        <li>Ratios and Proportions.</li>
+                                                        <li>Proportional Relationships.</li>
+                                                        <li>Introduction to Graphing.</li>
+                                                        <li>Introduction to Algebra.</li>
+                                                        <li>Equations and Inequalities.</li>
+                                                        <li>Geometry.</li>
+                                                        <li>Similar and Congruent Figures.</li>
+                                                        <li>Transformations.</li>
+                                                        <li>Statistics.</li>
+                                                        <li>Data Analysis.</li>
+                                                        <li>Probability.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- end blog comment wrappper-->
+                                        </div>
+                                        <div>
+                                            <!-- start blog comment wrappper-->
+                                            <div class="container no-padding">
+                                                <div class="row">
+                                                    <h3 class="font-size24 sm-font-size22 xs-font-size20 font-weight-500">Grade 6 Courses</h3>
+                                                    <p class="margin-20px-bottom">Here is a list of Grade 6 Mathematics subjects that we offer training and tutoring on. You have the option to either choose the full module or pick individual courses you would need to extend your knowledge on.</p>
+
+                                                    <ul class="list-style2">
+                                                        <li>Whole Numbers.</li>
+                                                        <li>Fractions.</li>
+                                                        <li>Percents.</li>
+                                                        <li>Introductions to Graphing.</li>
+                                                        <li>Rates and Ratios.</li>
+                                                        <li>Introduction to Algebra.</li>
+                                                        <li>Solving Equations and Inequalities.</li>
+                                                        <li>Functions.</li>
+                                                        <li>Measurement.</li>
+                                                        <li>Plane Geometry.</li>
+                                                        <li>Angles.</li>
+                                                        <li>Solid Geometry.</li>
+                                                        <li>Probability.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- end blog comment wrappper-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  end course details intro -->
+
+                    <!--  start course right side-bar details -->
+                    <div class="col-lg-3 col-md-12">
+                        <div class="side-bar">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h6>Tutoring Session Cost</h6>
+                                </div>
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="" title=""><img src="img/courses/courses-sidebar1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="javascript:void(0)">Consulting</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span><del>$25</del></span> <span class="new_price">$0/per hour</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar2.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="javascript:void(0)">Pre-Calculus</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span class="new_price">$40/per hour</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="" title="">Calculus I</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span class="new_price">$40/per hour</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="" title="">Calculus II</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span class="new_price">$45/per hour</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="" title="">AP Calculus AB</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span class="new_price">$40/per hour</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="" title="">AP Calculus BC</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span class="new_price">$40/per hour</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="" title="">Pre-Algebra</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span class="new_price">$30/per hour</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="" title="">Algebra</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span class="new_price">$30/per hour</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="" title="">Algebra I</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span class="new_price">$35/per hour</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="" title="">Algebra II</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span class="new_price">$35/per hour</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="" title="">ACT/SAT Prep</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span class="new_price">$50/per hour</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="" title="">trigonometry</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span class="new_price">$35/per hour</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="" title="">Geometry</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span class="new_price">$35/per hour</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget">
+
+                                <div class="widget-title">
+                                    <h6>Our Popular Modules</h6>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="" title=""><img src="img/courses/courses-sidebar1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="javascript:void(0)">ACT Exam Prep</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span><del>$2000</del></span> <span class="new_price">$1600</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar2.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="javascript:void(0)">ACCUPLACER Exam Prep</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span><del>$1600</del></span> <span class="new_price">$1500</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-post margin-25px-bottom">
+                                    <div class="recent_img">
+                                        <a href="javascript:void(0)"><img src="img/courses/courses-sidebar3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="post_title">
+                                        <a href="" title="">Calculus Module</a>
+                                        <div class="courses_price">
+                                            <div class="price"><span class="new_price">$1600</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  end course right side-bar details -->
+
+                </div>
+            </div>
+        </section>
+        <!-- end course-details section -->
+
+        <!-- start course area section -->
+        <section class="courses-area bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 center-col margin-50px-bottom md-margin-40px-bottom text-center">
+                        <h3 class="font-weight-500 font-size32 md-font-size28 sm-font-size26 xs-font-size24 section-title">Prep for College Entry Exams</h3>
+                        <div class="title-border"><span class="lg"></span><span class="md"></span><span class="sm"></span></div>
+                    </div>
+                </div>
+                <div class="courses-list">
+                    <div class="owl-carousel owl-theme">
+                        <div class="courses-box">
+                            <div class="courses-pic position-relative">
+                                <a href="course-details.html"><img src="img/courses/courses_thumb_01.jpg" alt="" /></a>
+                            </div>
+                            <div class="course-main-content">
+                                <div class="courses-desc last-paragraph-no-margin">
+                                    <div class="courses-title">
+                                        <h4 class="font-size22 md-font-size20 sm-font-size18 margin-5px-bottom font-weight-500"><a href="#" class="text-theme-color">ACT Prep</a></h4>
+                                    </div>
+                                    <div class="course-review margin-15px-bottom">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="padding-10px-left">20 Reviews</span>
+                                    </div>
+                                    <p class="font-size15 xs-font-size14 line-height-28">Prepare for ACT tests with official practice questions and one on one tutoring to give you the best odds of succeeding. </p>
+                                </div>
+                            </div>
+                            <div class="card-footer media bg-white align-items-center justify-content-between">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-1">
+                                        <i class="ti-book mr-2"></i>5 weeks
+                                    </li>
+                                    <li class="">
+                                        <i class="ti-time mr-2"></i>8 hours
+                                    </li>
+                                </ul>
+                                <h4 class="text-right no-margin-bottom">
+                                    <span>$2000</span>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="courses-box">
+                            <div class="courses-pic position-relative">
+                                <a href="course-details.html"><img src="img/courses/courses_thumb_02.jpg" alt="" /></a>
+                            </div>
+                            <div class="course-main-content">
+                                <div class="courses-desc last-paragraph-no-margin">
+                                    <div class="courses-title">
+                                        <h4 class="font-size22 md-font-size20 sm-font-size18 margin-5px-bottom font-weight-500"><a href="#" class="text-theme-color">College ACCUPLACER</a></h4>
+                                    </div>
+                                    <div class="course-review margin-15px-bottom">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="padding-10px-left">26 Reviews</span>
+                                    </div>
+                                    <p class="font-size15 xs-font-size14 line-height-28">Prepare for College ACCUPLACER exams with guided help from our tutors to increase your chances of succeeding.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer media bg-white align-items-center justify-content-between">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-1">
+                                        <i class="ti-book mr-2"></i>5weeks
+                                    </li>
+                                    <li class="">
+                                        <i class="ti-time mr-2"></i>8 hours
+                                    </li>
+                                </ul>
+                                <h4 class="text-right no-margin-bottom">
+                                    <span>$1600</span>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="courses-box">
+                            <div class="courses-pic position-relative">
+                                <a href="course-details.html"><img src="img/courses/courses_thumb_03.jpg" alt="" /></a>
+                            </div>
+                            <div class="course-main-content">
+                                <div class="courses-desc last-paragraph-no-margin">
+                                    <div class="courses-title">
+                                        <h4 class="font-size22 md-font-size20 sm-font-size18 margin-5px-bottom font-weight-500"><a href="#" class="text-theme-color">Calculus I, II, III</a></h4>
+                                    </div>
+                                    <div class="course-review margin-15px-bottom">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="padding-10px-left">18 Reviews</span>
+                                    </div>
+                                    <p class="font-size15 xs-font-size14 line-height-28">Prepare for your calculus I, II, and III exams by taking our calculus tutoring module designed for college students.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer media bg-white align-items-center justify-content-between">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-1">
+                                        <i class="ti-book mr-2"></i>5 weeks
+                                    </li>
+                                    <li class="">
+                                        <i class="ti-time mr-2"></i>8 hours
+                                    </li>
+                                </ul>
+                                <h4 class="text-right no-margin-bottom">
+                                    <span>$1600</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end course area section -->
+{% endblock %}

@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block content %}
+
+        <!-- start page title section -->
+        <section class="page-title-section bg-img cover-background" data-overlay-dark="4" data-background="{{ url_for('static', filename='img/bg/Event.svg') }}">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Teaching and Tutoring Events</h1>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end page title section -->
+
+        <!-- start event section -->
+        <section>
+            <div class="container">
+
+                <!-- start event block -->
+                <div class="row align-items-center event-block no-gutters margin-40px-bottom">
+                    <div class="col-lg-5 col-sm-12">
+                        <div class="position-relative">
+                            <img src="{{ url_for('static', filename='img/events/EventBusinessConf.svg') }}" alt="" />
+                            <div class="events-date">
+                                <div class="font-size28">10</div>
+                                <div class="font-size14">Jul</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-sm-12">
+                        <div class="padding-60px-lr md-padding-50px-lr sm-padding-30px-all xs-padding-25px-all">
+                            <h5 class="margin-15px-bottom md-margin-10px-bottom font-size22 md-font-size20 xs-font-size18 font-weight-500"><a href="event-details.html" class="text-theme-color">Discussion Group</a></h5>
+                            <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
+                                <li><i class="far fa-clock margin-10px-right"></i> 01:30 PM - 03:30 PM</li>
+                                <li><i class="fas fa-user margin-5px-right"></i> Organizer : Salman, Ouedraogo</li>
+                            </ul>
+                            <p>Join us and learn about the benefit of Mathematics and how it is being used in Finance, Economics, and Computer Science.</p>
+                            <a class="butn small margin-10px-top md-no-margin-top" href="https://www.meetup.com/">Sign Up <i class="fas fa-long-arrow-alt-right margin-10px-left"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end event block -->
+
+                <!-- start event block -->
+                <div class="row align-items-center event-block no-gutters margin-40px-bottom">
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <div class="padding-60px-lr md-padding-50px-lr sm-padding-30px-all xs-padding-25px-all">
+                            <h5 class="margin-15px-bottom md-margin-10px-bottom font-size22 md-font-size20 xs-font-size18 font-weight-500"><a href="event-details.html" class="text-theme-color">YouTube Webinars</a></h5>
+                            <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
+                                <li><i class="far fa-clock margin-10px-right"></i> 07:00 PM - 08:00 PM</li>
+                                <li><i class="fas fa-user margin-5px-right"></i> Presenter : Salman, Ouedraogo</li>
+                            </ul>
+                            <p>Join us in the webinar session to learn more STEM subjects.</p>
+                            <a class="butn small margin-10px-top md-no-margin-top" href="https://www.meetup.com/">Join US <i class="fas fa-long-arrow-alt-right margin-10px-left"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-1 order-lg-2">
+                        <div class="position-relative">
+                            <img src="{{ url_for('static', filename='img/events/EventMentorship.svg') }}" alt="" />
+                            <div class="events-date">
+                                <div class="font-size28">28</div>
+                                <div class="font-size14">Aug</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end event block -->
+
+                <!-- start event block -->
+                <div class="row align-items-center event-block no-gutters margin-40px-bottom">
+                    <div class="col-lg-5 col-sm-12">
+                        <div class="position-relative">
+                            <img src="{{ url_for('static', filename='img/events/EventTechnical.svg') }}" alt="" />
+                            <div class="events-date">
+                                <div class="font-size28">23</div>
+                                <div class="font-size14">Oct</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-sm-12">
+                        <div class="padding-60px-lr md-padding-50px-lr sm-padding-30px-all xs-padding-25px-all">
+                            <h5 class="margin-15px-bottom md-margin-10px-bottom font-size22 md-font-size20 xs-font-size18 font-weight-500"><a href="event-details.html" class="text-theme-color">High School Math Events</a></h5>
+                            <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
+                                <li><i class="far fa-clock margin-10px-right"></i> 09:00 AM - 12:00 AM</li>
+                                <li><i class="fas fa-user margin-5px-right"></i> Speaker : Salman, Ouedraogo</li>
+                            </ul>
+                            <p>Making scientific concepts less abstract is one of our main goal. So let's meet at your favorite High-School for an overview of things to learn if you want to be successful in Math.</p>
+                            <a class="butn small margin-10px-top md-no-margin-top" href="https://www.meetup.com/">Sign Up <i class="fas fa-long-arrow-alt-right margin-10px-left"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end event block -->
+
+                <!-- start event block -->
+                <div class="row align-items-center event-block no-gutters margin-40px-bottom">
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <div class="padding-60px-lr md-padding-50px-lr sm-padding-30px-all xs-padding-25px-all">
+                            <h5 class="margin-15px-bottom md-margin-10px-bottom font-size22 md-font-size20 xs-font-size18 font-weight-500"><a href="event-details.html" class="text-theme-color">Youngster Math Program</a></h5>
+                            <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
+                                <li><i class="far fa-clock margin-10px-right"></i> 10:00 AM - 12:00 PM</li>
+                                <li><i class="fas fa-user margin-5px-right"></i> Organizer : Salman, Ouedraogo</li>
+                            </ul>
+                            <p>Attend our free STEM teaching events for kids designed to help foster the geniuses of tomorrow's world.</p>
+                            <a class="butn small margin-10px-top md-no-margin-top" href="https://www.meetup.com/">Join Us <i class="fas fa-long-arrow-alt-right margin-10px-left"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-1 order-lg-2">
+                        <div class="position-relative">
+                            <img src="{{ url_for('static', filename='img/events/EventCraft.svg') }}" alt="" />
+                            <div class="events-date">
+                                <div class="font-size28">20</div>
+                                <div class="font-size14">Nov</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end event block -->
+
+            </div>
+        </section>
+        <!-- end event section -->
+
+{% endblock %}

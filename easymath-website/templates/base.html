@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="SigmathAcademy Learning" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="EasyMath" />
+    <meta name="description" content="SigmathAcademy - STEM Learning and Tutoring Portal" />
+
+    <!-- title  -->
+    {% if title %}
+    <title>{{ title }} | SigmathAcademy Learning Services</title>
+    {% else %}
+    <title>EasyMath - STEM Learning and Tutoring Portal</title>
+    {% endif %}
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logos/favicon.png') }}" />
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/logos/favicon.png') }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/logos/favicon.png') }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/logos/favicon.png') }}" />
+
+    <!-- plugins -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}" />
+
+    <!-- search css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='search/search.css') }}" />
+
+    <!-- core style css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"  />
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://matomo.geanttechnology.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+</head>
+
+<body>
+
+<!-- start page loading -->
+<div id="preloader">
+    <div class="row loader">
+        <div class="loader-icon"></div>
+    </div>
+</div>
+<!-- end page loading -->
+
+<!-- start main-wrapper section -->
+<div class="main-wrapper">
+
+    <!-- start header section -->
+    <header class="header-style1 menu_area-light">
+
+        <div class="navbar-default">
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-12">
+                        <div class="menu_area alt-font">
+                            <nav class="navbar navbar-expand-lg navbar-light no-padding">
+
+                                <div class="navbar-header navbar-header-custom">
+                                    <!-- start logo -->
+                                    <a href="{{ url_for('home') }}" class="navbar-brand"><img id="logo" src="{{ url_for('static', filename='img/logos/easy-math-logo.svg') }}" height="70" width="346" alt="SigmathAcademy Logo"></a>
+                                    <!-- end logo -->
+                                </div>
+
+                                <div class="navbar-toggler"></div>
+
+                                <!-- start menu area -->
+                                <ul class="navbar-nav ml-auto" id="nav" style="display: none;">
+                                    <li><a href="{{ url_for('home') }}">Home</a>
+                                    </li>
+                                    <li><a href="{{ url_for('courses') }}">Courses</a></li>
+                                    <li><a href="{{ url_for('events') }}">Events</a></li>
+                                    <li><a href="{{ url_for('about') }}">About US</a>
+                                        <ul>
+                                            <li><a href="{{ url_for('about') }}">About US</a></li>
+                                            <li><a href="{{ url_for('contact') }}">Contact US</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- end menu area -->
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- end header section -->
+
+    <!-- Main -->
+    {% block content %}
+    {% endblock %}
+    <!-- End Main -->
+
+    <!-- start footer section -->
+    <footer class="border-top bg-white border-color-light-gray padding-70px-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 sm-margin-30px-bottom">
+                    <img class="width-60 sm-width-40" src="{{ url_for('static', filename='img/logos/easy-math-logo.svg') }}" height="70" width="346" alt="EasyMath Logo" />
+                    <p class="margin-20px-top text-dark-gray width-90 xs-width-100">The best way to keep your brain awake and the x's away.</p>
+
+                    <div class="margin-20px-top footer-social-icons2">
+                        <ul>
+                            <li><a href="https://www.facebook.com/salman.ouedraogo.182"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="@Salmanthemathman"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCgU4fHfoGrZTt_QfGJ4PayA"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="http://linkedin.com/in/steeve-ouedraogo-43b70b139"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 sm-margin-30px-bottom">
+                    <div class="padding-30px-left md-padding-25px-left sm-no-padding-left">
+                        <div class="footer-title-style3 margin-15px-bottom">
+                            <h3>Quick Links</h3>
+                            <div class="title-border"><span class="lg"></span><span class="md"></span><span class="sm"></span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 no-padding-right xs-padding-15px-right">
+                                <ul class="footer-list2 xs-margin-8px-bottom">
+                                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 no-padding-right xs-padding-15px-right">
+                                <ul class="footer-list2">
+                                    <li><a href="{{ url_for('courses') }}">Course Details</a></li>
+                                    <li><a href="https://www.sigmathacademy.com">Online Courses</a></li>
+                                    <li><a href="{{ url_for('events') }}">Events</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="padding-30px-left md-padding-25px-left sm-no-padding-left">
+                        <div class="footer-title-style3 margin-15px-bottom">
+                            <h3>Get in Touch</h3>
+                            <div class="title-border"><span class="lg"></span><span class="md"></span><span class="sm"></span></div>
+                        </div>
+                        <p class="no-margin-bottom text-dark-gray">Don't forget to drop us an email so we can keep in touch!</p>
+                        <form>
+                            <div class="form-group footer-subscribe2">
+                                <input type="email" placeholder="sigmathservices@gmail.com" id="Email1" class="form-control text-black">
+                                <a class="butn theme"><span>Email US</span></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar bg-white xs-font-size13 border-top border-color-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-left xs-text-center xs-margin-5px-bottom text-dark-gray sm-font-size13">
+                        <p>© Copyright {{ now.year }} SigmathAcademy. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+</div>
+<!-- end main-wrapper section -->
+
+<!-- start scroll to top -->
+<a href="javascript:void(0)" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+<!-- end scroll to top -->
+
+<!-- all js include start -->
+
+<!-- jQuery -->
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+
+<!-- modernizr js -->
+<script src="{{ url_for('static', filename='js/modernizr.js') }}"></script>
+
+<!-- bootstrap -->
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+<!-- search -->
+<script src="{{ url_for('static', filename='js/search/search.js') }}"></script>
+
+<!-- navigation -->
+<script src="{{ url_for('static', filename='js/nav-menu.js') }}"></script>
+
+<!-- tab -->
+<script src="{{ url_for('static', filename='js/easy.responsive.tabs.js') }}"></script>
+
+<!-- owl carousel -->
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+
+<!-- thumbs js -->
+<script src="{{ url_for('static', filename='js/owl.carousel.thumbs.js') }}"></script>
+
+<!-- jquery.counterup.min -->
+<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+
+<!-- stellar js -->
+<script src="{{ url_for('static', filename='js/jquery.stellar.min.js') }}"></script>
+
+<!-- waypoints js -->
+<script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+
+<!-- countdown js -->
+<script src="{{ url_for('static', filename='js/countdown.js') }}"></script>
+
+<!-- jquery.magnific-popup js -->
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+
+<!-- isotope.pkgd.min js -->
+<script src="{{ url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
+
+<!-- custom scripts -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+<!-- all js include end -->
+
+</body>
+
+</html>
