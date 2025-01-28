@@ -1,2 +1,2 @@
 # sigmathacademy-website
-Static website content for SigmathAcademy
+Static website content for SigmathAcademy portal
